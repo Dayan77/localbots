@@ -2,14 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const clientLogos = [
-  { name: 'InnovateCore', description: 'Placeholder for InnovateCore' },
-  { name: 'QuantumLeap', description: 'Placeholder for QuantumLeap' },
-  { name: 'AuraFlow', description: 'Placeholder for AuraFlow' },
-  { name: 'NexusGen', description: 'Placeholder for NexusGen' },
-  { name: 'SparkSolutions', description: 'Placeholder for SparkSolutions' },
-  { name: 'VortexLabs', description: 'Placeholder for VortexLabs' },
-  { name: 'EchoBridge', description: 'Placeholder for EchoBridge' },
-  { name: 'ZenithWorks', description: 'Placeholder for ZenithWorks' },
+  { name: 'Local Bots', img: '/image_f438ffa5.png' },
+  { name: 'Local Bots Volleyball', img: '/image_eae66dc0.png' },
+  { name: 'Local Bots', img: '/image_f438ffa5.png' },
+  { name: 'Local Bots Volleyball', img: '/image_eae66dc0.png' },
 ];
 
 const marqueeLogos = [...clientLogos, ...clientLogos]; // Duplicate for seamless loop
@@ -37,9 +33,11 @@ const TrustedClients = () => {
           <motion.div className="flex" variants={marqueeVariants} animate="animate">
             {marqueeLogos.map((logo, index) => (
               <div key={index} className="flex-shrink-0 w-48 mx-12 flex justify-center items-center">
-                <span className="text-white text-2xl md:text-3xl font-semibold opacity-70">
-                  {logo.name}
-                </span>
+                {logo.img ? (
+                  <img src={logo.img} alt={logo.name} className="h-20 object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                ) : (
+                  <span className="text-white text-2xl md:text-3xl font-semibold opacity-70">{logo.name}</span>
+                )}
               </div>
             ))}
           </motion.div>

@@ -92,7 +92,7 @@ const ContatoPage = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foreground">Telefone</h3>
-                <p className="text-muted-foreground">+55 (11) 99999-9999</p>
+                <p className="text-muted-foreground">+55 (92) 98128-6996</p>
               </div>
             </GlassCard>
 

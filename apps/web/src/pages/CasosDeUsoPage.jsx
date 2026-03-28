@@ -34,14 +34,14 @@ const CasosDeUsoPage = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <RobotMascot 
-              src="https://horizons-cdn.hostinger.com/ca336279-bebb-4caf-be4f-febfa5c1580e/ece7c55e14c72f62422b400b773fe25c.png" 
+            <RobotMascot
+              src="/image_32c13906.png"
               className="w-full max-w-sm drop-shadow-xl"
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {cases.map((item, idx) => (
             <GlassCard key={idx} delay={idx * 0.1} className="flex items-start gap-6">
               <div className="p-4 rounded-xl bg-primary/10 border border-primary/20">
@@ -53,6 +53,20 @@ const CasosDeUsoPage = () => {
               </div>
             </GlassCard>
           ))}
+        </div>
+
+        <div className="space-y-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center">
+            O Funil de <GradientText glow>IA em Ação</GradientText>
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img src="/image_13cc8abb.png" alt="Funil de IA: Qualificação e Transmissão para o Humano" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img src="/image_5f38091f.png" alt="Robô levando leads para a compra final" className="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
       </main>
     </>
