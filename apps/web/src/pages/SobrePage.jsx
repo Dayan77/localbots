@@ -42,9 +42,10 @@ const SobrePage = () => {
             </GlassCard>
           </div>
           <div className="order-1 lg:order-2 flex justify-center">
-            <RobotMascot 
-              src="https://horizons-cdn.hostinger.com/ca336279-bebb-4caf-be4f-febfa5c1580e/c7c4ca9c7f6416bf9f581b64df95b0f2.png" 
-              className="w-full max-w-md drop-shadow-xl"
+            <img
+              src="/image_sobre.png"
+              alt="LocalBots - Automação Empresarial Simples e Rápida"
+              className="w-full max-w-md rounded-2xl drop-shadow-xl"
             />
           </div>
         </div>

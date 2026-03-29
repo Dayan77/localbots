@@ -23,7 +23,7 @@ for f in dist/apps/web/assets/*; do
   upload "$f" "assets/$(basename $f)"
 done
 
-for f in apps/web/public/*.png apps/web/public/*.jpg apps/web/public/*.svg apps/web/public/*.ico 2>/dev/null; do
+for f in apps/web/public/*.png apps/web/public/*.jpg apps/web/public/*.svg apps/web/public/*.ico; do
   [ -f "$f" ] && upload "$f" "$(basename $f)"
 done
 

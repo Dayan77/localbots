@@ -34,9 +34,10 @@ const CasosDeUsoPage = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <RobotMascot
-              src="/image_32c13906.png"
-              className="w-full max-w-sm drop-shadow-xl"
+            <img
+              src="/image_casos_top.png"
+              alt="LocalBots - Suporte ao Cliente"
+              className="w-full max-w-sm rounded-2xl drop-shadow-xl"
             />
           </div>
         </div>

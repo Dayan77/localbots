@@ -57,7 +57,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center mb-16"
           >
             <NeonButton
               onClick={handleCTAClick}
@@ -73,6 +73,19 @@ const Hero = () => {
             >
               Ver Casos de Uso
             </NeonButton>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.9 }}
+            className="flex justify-center"
+          >
+            <img
+              src="/image_home.png"
+              alt="LocalBots - Automação Empresarial Simples e Rápida"
+              className="w-full max-w-2xl rounded-2xl drop-shadow-2xl"
+            />
           </motion.div>
         </div>
       </div>
